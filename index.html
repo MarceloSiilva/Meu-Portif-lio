@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="estillo.css">
+    <script>
+
+        var quebrada = false;
+        function mudaLampada(tipo) {
+
+            if (!quebrada){
+                document.getElementById("Luz").src = "_imagens/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada') {
+                    quebrada = true;
+                }
+            }
+           
+        }
+     
+    </script>
+</head>
+<body>
+
+    
+
+    <div class="topo">
+ 
+        <h2>Marcelo Silva</h2> 
+        <a href="https://www.linkedin.com/in/marcelo-silva-6101b419b/"><img src="_Imagens/linkedinp.png" alt="logo linkedin"></a>
+        
+        <div class="imagem2">
+            <a href="https://web.whatsapp.com/send?phone=5511982648734" text="5511982648734" ><img src="_Imagens/zapp.png" alt="zapp"></a>
+            
+        </div>
+        
+        
+    </div>
+
+    <h1>Meu Portifólio Currículo</h1>
+
+    <section class="cont1">
+        <h2>Contato</h2>
+        <p>
+            E-mail: marcelo_sp_@hotmail.com <br>
+            Celular: (11)98264-8734 <br>
+            Endereço: Rua Meu Portifólio  <br>
+            Bairro: Parque São Rafael <br>
+            UF: SP
+        </p>
+
+        <h2>Qualificações</h2>
+        <p>
+            Desenvolvimento em HTML5 e CSS3 Básico <br>
+            Programação em JavaScript Básico <br>
+            Banco de Dados <br>
+            HardWare e Redes Intermediário <br>
+        </p>
+
+        <h2> Objetivo</h2>
+
+        <p>
+            Estágios Análise e Desenvolvimento de Sistemas ou áreas Similares.
+        </p>
+    </section>
+
+    <article class="cont2">
+        <h2>Formação Escolar</h2>
+        <p>
+            Cursando: Análise e Desenvolvimento de Sistemas <br>
+            Instituição: Faculdade Anhanguera UniABC - Santo André, SP <br>
+            Conclusão: 12/2021 <br>
+            Ensino Médio: Completo <br>
+            E.E Moacyr Amaral Dos Santos <br>
+
+        </p>
+
+        <h2>Cursos ExtraCurrículares</h2>
+            
+        <p> 
+            <b>Udemy</b><br>
+            Web Design: Construa Sites com PHP, HTML, CSS e JavaScript <br>
+            Introdução HTML <br>
+            Introdução CSS <br>
+
+            <b>CursoEmVideo</b> <br>
+            Desenvolvimento para internet com HTML5, CSS3 e Programação JavaScript <br>
+            Banco de dados <br>
+        </p>
+    </article>
+
+    <hgroup>
+        <img src="_Imagens/fotom.png"  alt="Tipos">
+    </hgroup>
+
+    <div class="imagem3">
+
+        <img src="_imagens/lampada-apagada.jpg" id="Luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')">
+
+    </div>
+    
+    <footer>
+            <p>Desenvolvido por Marcelo Silva</p>
+    </footer>
+</body>
+</html>  
